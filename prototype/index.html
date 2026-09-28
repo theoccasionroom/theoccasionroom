@@ -13,13 +13,20 @@
 <a class="skip-link" href="#main">Skip to content</a>
 
 <!-- ============================================================
+     TOP BAR  (Elementor: part of the Header template)
+     ============================================================ -->
+<div class="top-bar">
+  <p>Now welcoming partner planners for 2027 weddings</p>
+</div>
+
+<!-- ============================================================
      HEADER  (Elementor: Theme Builder > Header, sticky)
      Row: Logo (Image) | Nav Menu (6 items) | Button "Contact Us"
      ============================================================ -->
 <header class="site-header">
   <div class="container header-inner">
     <a class="header-logo" href="index.html" aria-label="The Occasion Room, home">
-      <img src="assets/logo/occasion-room-horizontal.svg" alt="The Occasion Room" width="220" height="45">
+      <img src="assets/logo/rings-horizontal.svg" alt="The Occasion Room: Every detail. One room" width="240" height="52">
     </a>
 
     <nav class="main-nav" id="main-nav" aria-label="Main">
@@ -47,34 +54,34 @@
 
 <!-- ============================================================
      SECTION 1: HERO
-     Container boxed 1200 > 2 columns (52% / 48%), stacks on mobile
-     Left: eyebrow, H1, text, 2 buttons, 3 trust points
-     Right: device mockup image + live countdown card (overlapping)
+     Deep Wine + rings pattern. Centered text column, then the device
+     mockup, which overlaps into the next section on desktop.
      ============================================================ -->
-<section class="section hero" aria-labelledby="hero-title">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">Custom wedding websites for planners</p>
-      <h1 id="hero-title">Bespoke wedding websites your couples will treasure</h1>
-      <p class="lead">Premium, custom-made wedding websites you offer as part of your planning packages. Every detail for guests and couples, all in one place, and a keepsake that lasts long after the last dance.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="contact.html">Become a Partner Planner</a>
-        <a class="btn btn-secondary" href="how-it-works.html">See How It Works</a>
-      </div>
-      <ul class="trust-points">
-        <li><img src="assets/icons/diamond.svg" alt="" width="10" height="10">Done for you</li>
-        <li><img src="assets/icons/diamond.svg" alt="" width="10" height="10">Your branding on every site</li>
-        <li><img src="assets/icons/diamond.svg" alt="" width="10" height="10">Made for phones first</li>
-      </ul>
+<section class="hero bg-wine" aria-labelledby="hero-title">
+  <div class="container hero-inner">
+    <img class="hero-seal" src="assets/images/wax-seal.svg" alt="" width="96" height="96">
+    <p class="eyebrow eyebrow-gold">Custom wedding websites for planners</p>
+    <h1 id="hero-title">Bespoke wedding websites <span class="script">your couples will treasure</span></h1>
+    <p class="lead">Premium, custom-made wedding websites you offer as part of your planning packages. Every detail for guests and couples, all in one place, and a keepsake that lasts long after the last dance.</p>
+    <div class="btn-row btn-row-center">
+      <a class="btn btn-gold" href="contact.html">Become a Partner Planner</a>
+      <a class="btn btn-light" href="how-it-works.html">See How It Works</a>
     </div>
+    <ul class="trust-points">
+      <li>Done for you</li>
+      <li>Your branding on every site</li>
+      <li>Made for phones first</li>
+    </ul>
+  </div>
 
+  <div class="container hero-visual-wrap">
     <div class="hero-visual">
-      <!-- Device mockup: export as one image for Elementor (assets/hero-mockup.png) -->
+      <!-- Device mockup: exported as one image for Elementor (assets/images/hero-mockup.png) -->
       <div class="devices" role="img" aria-label="A sample wedding website for Isabella and Mateo, shown on a laptop and a phone">
         <div class="laptop">
           <div class="laptop-screen">
             <div class="mini-site">
-              <div class="mini-nav"><span>I &amp; M</span><span class="mini-links">Our Story · Schedule · Travel · RSVP</span></div>
+              <div class="mini-nav"><span class="mini-mono">I &amp; M</span><span class="mini-links">Our Story · Schedule · Travel · RSVP</span></div>
               <div class="mini-hero photo photo-rose">
                 <div class="mini-hero-text">
                   <p class="mini-kicker">We're getting married</p>
@@ -103,9 +110,10 @@
         </div>
       </div>
 
-      <!-- Live countdown card (Elementor: Countdown widget inside a small card container) -->
-      <div class="countdown-card" aria-label="Live countdown to Isabella and Mateo's wedding">
-        <p class="countdown-label">Isabella &amp; Mateo's big day</p>
+      <!-- Live countdown card (Elementor: Countdown widget inside an invitation-style card) -->
+      <div class="countdown-card framed" aria-label="Live countdown to Isabella and Mateo's wedding">
+        <p class="countdown-label">Isabella &amp; Mateo</p>
+        <p class="countdown-sub">Counting down to the big day</p>
         <div class="countdown" data-countdown="2027-06-12T16:00:00">
           <div><span data-unit="days">000</span><small>Days</small></div>
           <div><span data-unit="hours">00</span><small>Hours</small></div>
@@ -118,28 +126,40 @@
 </section>
 
 <!-- ============================================================
-     SECTION 2: HOW IT WORKS (3 steps)
-     Background: Champagne. Centered heading, 3 columns, 1 text button
+     SECTION 2: STATEMENT
+     Ivory + paper texture. One centered editorial sentence.
      ============================================================ -->
-<section class="section bg-champagne" aria-labelledby="how-title">
+<section class="section statement texture" aria-label="Our philosophy">
+  <div class="container statement-inner">
+    <div class="ornament" aria-hidden="true"><span></span><img src="assets/icons/diamond.svg" alt="" width="10" height="10"><span></span></div>
+    <p class="statement-text">A wedding website should feel like the invitation: considered, personal, and unmistakably theirs.</p>
+    <p class="statement-sign script">Every detail. One room.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3: HOW IT WORKS (3 invitation cards)
+     Champagne + paper texture
+     ============================================================ -->
+<section class="section bg-champagne texture" aria-labelledby="how-title">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">How it works</p>
-      <h2 id="how-title">Effortless for you. Unforgettable for them.</h2>
+      <h2 id="how-title">Effortless for you, <span class="script">unforgettable for them</span></h2>
     </div>
     <ol class="steps">
-      <li class="step">
-        <span class="step-number" aria-hidden="true">01</span>
+      <li class="step framed">
+        <span class="step-number" aria-hidden="true">I</span>
         <h3>You partner with us</h3>
         <p>Add a custom wedding website to your planning packages. Send us your couple's details and we take it from there.</p>
       </li>
-      <li class="step">
-        <span class="step-number" aria-hidden="true">02</span>
+      <li class="step framed">
+        <span class="step-number" aria-hidden="true">II</span>
         <h3>We design and build each site</h3>
         <p>Every site is personalized to the couple's style, colors, and story, with your branding included. No templates, no extra work for you.</p>
       </li>
-      <li class="step">
-        <span class="step-number" aria-hidden="true">03</span>
+      <li class="step framed">
+        <span class="step-number" aria-hidden="true">III</span>
         <h3>Guests RSVP, the couple keeps the memory</h3>
         <p>Guests find every detail and reply in moments. After the wedding, the site becomes a keepsake the couple can return to for years.</p>
       </li>
@@ -151,19 +171,21 @@
 </section>
 
 <!-- ============================================================
-     SECTION 3: FOR PLANNERS (5 benefits)
-     2 columns (42% / 58%): photo left, heading + icon list right
+     SECTION 4: FOR PLANNERS (5 benefits)
+     2 columns (42% / 58%): arch photo left, heading + icon list right
      ============================================================ -->
 <section class="section" aria-labelledby="planners-title">
   <div class="container split">
     <div class="split-media">
-      <div class="photo photo-champagne photo-tall" role="img" aria-label="Photo placeholder: a wedding planner reviewing a couple's wedding website on a tablet">
-        <span class="photo-note">Photo: planner with client, reviewing the site</span>
+      <div class="arch-frame">
+        <div class="photo photo-champagne arch-photo" role="img" aria-label="Photo placeholder: a wedding planner reviewing a couple's wedding website on a tablet">
+          <span class="photo-note">Photo: planner with client</span>
+        </div>
       </div>
     </div>
     <div class="split-copy">
       <p class="eyebrow">For wedding planners</p>
-      <h2 id="planners-title">Make your service look even more polished</h2>
+      <h2 id="planners-title">Make your service look <span class="script">even more polished</span></h2>
       <p>A custom wedding website is a thoughtful touch that makes your clients feel cared for, and quietly shows the level of detail you bring to every wedding.</p>
       <ul class="benefits">
         <li>
@@ -193,19 +215,19 @@
 </section>
 
 <!-- ============================================================
-     SECTION 4: FOR COUPLES & GUESTS
-     Background: Champagne. Centered heading, 2 cards side by side
+     SECTION 5: FOR COUPLES & GUESTS
+     Champagne + paper texture. 2 invitation cards with arch photos
      ============================================================ -->
-<section class="section bg-champagne" aria-labelledby="couples-title">
+<section class="section bg-champagne texture" aria-labelledby="couples-title">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">For couples &amp; guests</p>
-      <h2 id="couples-title">Everything for the day, all in one place</h2>
+      <h2 id="couples-title">Everything for the day, <span class="script">all in one place</span></h2>
       <p>A customized home for a once-in-a-lifetime day, made to feel completely like them.</p>
     </div>
     <div class="cards-2">
-      <article class="card">
-        <div class="photo photo-rose photo-card" role="img" aria-label="Photo placeholder: a couple smiling together outdoors">
+      <article class="card framed">
+        <div class="photo photo-rose card-photo" role="img" aria-label="Photo placeholder: a couple smiling together outdoors">
           <span class="photo-note">Photo: the couple</span>
         </div>
         <div class="card-body">
@@ -218,8 +240,8 @@
           </ul>
         </div>
       </article>
-      <article class="card">
-        <div class="photo photo-sage photo-card" role="img" aria-label="Photo placeholder: wedding guests checking the schedule on a phone">
+      <article class="card framed">
+        <div class="photo photo-sage card-photo" role="img" aria-label="Photo placeholder: wedding guests checking the schedule on a phone">
           <span class="photo-note">Photo: guests at the celebration</span>
         </div>
         <div class="card-body">
@@ -237,14 +259,16 @@
 </section>
 
 <!-- ============================================================
-     SECTION 5: MEMORY MODE
-     Background: Deep Wine. 2 columns: text left, phone image right
+     SECTION 6: MEMORY MODE
+     Deep Wine + rings pattern, oversized faint script word behind.
+     2 columns: text left, phone image right
      ============================================================ -->
-<section class="section bg-wine" aria-labelledby="memory-title">
+<section class="section bg-wine memory" aria-labelledby="memory-title">
+  <p class="memory-word" aria-hidden="true">Forever</p>
   <div class="container split split-reverse">
     <div class="split-copy">
       <p class="eyebrow eyebrow-gold">Memory mode</p>
-      <h2 id="memory-title">When the day is over, the story stays</h2>
+      <h2 id="memory-title">When the day is over, <span class="script">the story stays</span></h2>
       <p>After the wedding, each site gently becomes a keepsake: a heartfelt thank-you to guests, favorite photos, and memories from the day, kept in one lovely place the couple can revisit and share.</p>
       <ul class="check-list check-list-light">
         <li>A thank-you message to every guest</li>
@@ -254,7 +278,7 @@
       <a class="btn btn-light" href="features.html">Explore All Features</a>
     </div>
     <div class="split-media memory-visual">
-      <!-- Export as one image for Elementor (assets/memory-mockup.png) -->
+      <!-- Exported as one image for Elementor (assets/images/memory-mockup.png) -->
       <div class="phone phone-solo" role="img" aria-label="A wedding website in memory mode, showing a thank-you message and photos">
         <div class="phone-screen">
           <p class="mini-kicker">12 June 2027</p>
@@ -275,27 +299,27 @@
 </section>
 
 <!-- ============================================================
-     SECTION 6: TESTIMONIALS (placeholders)
-     Centered heading, 3 quote cards
+     SECTION 7: TESTIMONIALS (placeholders)
+     Ivory + paper texture, 3 framed quote cards
      ============================================================ -->
-<section class="section" aria-labelledby="kind-words-title">
+<section class="section texture" aria-labelledby="kind-words-title">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Kind words</p>
-      <h2 id="kind-words-title">Loved by planners and their couples</h2>
+      <h2 id="kind-words-title">Loved by planners <span class="script">and their couples</span></h2>
     </div>
     <div class="cards-3">
-      <figure class="quote">
+      <figure class="quote framed">
         <span class="quote-mark" aria-hidden="true">“</span>
         <blockquote>My couples were overjoyed. It felt like an extension of the whole planning experience, and my phone finally stopped ringing with guest questions.</blockquote>
         <figcaption><strong>Planner Name</strong>Studio Name · City</figcaption>
       </figure>
-      <figure class="quote">
+      <figure class="quote framed">
         <span class="quote-mark" aria-hidden="true">“</span>
         <blockquote>It matched our invitations perfectly. Our guests kept telling us how beautiful and easy it was, and we still visit it to relive the day.</blockquote>
         <figcaption><strong>Couple Names</strong>Married in City, 2026</figcaption>
       </figure>
-      <figure class="quote">
+      <figure class="quote framed">
         <span class="quote-mark" aria-hidden="true">“</span>
         <blockquote>Adding The Occasion Room to my packages was the easiest upgrade I've made. It looks premium, and I don't lift a finger.</blockquote>
         <figcaption><strong>Planner Name</strong>Studio Name · City</figcaption>
@@ -305,18 +329,20 @@
 </section>
 
 <!-- ============================================================
-     SECTION 7: FINAL CALL TO ACTION (repeat on every page)
-     Background: Champagne with gold ampersand mark, centered
+     SECTION 8: FINAL CALL TO ACTION (repeat on every page)
+     Champagne + texture. Framed invitation card with a wax seal on its top edge
      ============================================================ -->
-<section class="section cta" aria-labelledby="cta-title">
-  <div class="container cta-inner">
-    <img class="cta-mark" src="assets/logo/mark-ampersand.svg" alt="" width="56" height="66">
-    <p class="eyebrow">Become a partner planner</p>
-    <h2 id="cta-title">Let's create something beautiful together</h2>
-    <p>Tell me about your business and the weddings you plan. I'll reply within 24 hours with everything you need to get started.</p>
-    <div class="btn-row btn-row-center">
-      <a class="btn btn-primary" href="contact.html">Contact Us</a>
-      <a class="btn btn-secondary" href="pricing.html">View Pricing</a>
+<section class="section cta bg-champagne texture" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-card framed">
+      <img class="cta-seal" src="assets/images/wax-seal.svg" alt="" width="104" height="104">
+      <p class="eyebrow">Become a partner planner</p>
+      <h2 id="cta-title">Let's create something <span class="script">beautiful together</span></h2>
+      <p>Tell me about your business and the weddings you plan. I'll reply within 24 hours with everything you need to get started.</p>
+      <div class="btn-row btn-row-center">
+        <a class="btn btn-primary" href="contact.html">Contact Us</a>
+        <a class="btn btn-secondary" href="pricing.html">View Pricing</a>
+      </div>
     </div>
   </div>
 </section>
@@ -325,12 +351,12 @@
 
 <!-- ============================================================
      FOOTER  (Elementor: Theme Builder > Footer)
-     Background: Deep Wine. 3 columns + bottom bar
+     Deep Wine + rings pattern. 3 columns + bottom bar
      ============================================================ -->
-<footer class="site-footer">
+<footer class="site-footer bg-wine">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <img src="assets/logo/occasion-room-horizontal-light.svg" alt="The Occasion Room" width="240" height="49">
+      <img src="assets/logo/rings-horizontal-light.svg" alt="The Occasion Room: Every detail. One room" width="280" height="60">
       <p>Premium, custom wedding websites, offered by the planners who make the day happen.</p>
     </div>
     <nav class="footer-col" aria-label="Footer">

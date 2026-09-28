@@ -3,7 +3,14 @@
 Open `brand-guide.html` in a browser to see every logo, color and type rule.
 `brand-guide-preview.png` is a screenshot of it.
 
-## Two color versions
+## Main logo: the rings (`logo-rings/`)
+
+**Use this one for the website and everything new.** Two interlocking rings with a location pin,
+the wordmark THE OCCASION ROOM and the tagline "Every detail. One room" (designed in Canva,
+recreated as vectors by `build_rings_logo.py`). PNGs are in `logo-rings/png/`.
+Colors: Wine `#721840`, Deep Wine `#3D0B21`, Cream `#EFE5D6`, Gold `#B08D57`, Soft Gold `#C9A96E`.
+
+## Earlier arch-and-ampersand logos (archived)
 
 - **`logo-wine/`: current brand colors (wine & gold).** Use these for the website and everything new.
   Includes `-gold` variants (gold arch and monogram) of the stacked and horizontal logos, and PNGs in `png/`.
