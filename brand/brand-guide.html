@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Occasion Room · Brand Guide</title>
+<link rel="icon" href="logo/favicon.svg">
+<link rel="stylesheet" href="tokens.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--tor-linen); color: var(--tor-plum); font: 17px/1.65 var(--tor-font-body); }
+  main { max-width: 1040px; margin: 0 auto; padding: 56px 20px 96px; }
+  h1, h2 { font-family: var(--tor-font-display); font-weight: 400; letter-spacing: .04em; }
+  h1 { font-size: clamp(34px, 6vw, 58px); margin: 0 0 4px; }
+  h2 { font-size: 30px; margin: 72px 0 8px; }
+  .label { font: 600 12px var(--tor-font-label); letter-spacing: .28em; text-transform: uppercase; color: var(--tor-lavender); }
+  p { max-width: 64ch; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 20px; }
+  .tile { border-radius: 14px; padding: 28px; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 220px; border: 1px solid color-mix(in srgb, var(--tor-taupe) 45%, transparent); }
+  .tile img { max-width: 100%; height: auto; }
+  .tile small { margin-top: 14px; font: 500 12px var(--tor-font-label); letter-spacing: .12em; opacity: .75; }
+  .wide { grid-column: 1 / -1; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 20px; }
+  .sw { border-radius: 12px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--tor-taupe) 45%, transparent); background: #fff; }
+  .sw div { height: 96px; }
+  .sw p { margin: 0; padding: 10px 12px; font-size: 14px; line-height: 1.4; }
+  .sw b { font-family: var(--tor-font-label); font-weight: 600; letter-spacing: .04em; }
+  .type { display: grid; gap: 12px; margin-top: 20px; }
+  .type > div { background: #fff8f1; border-radius: 12px; padding: 22px 24px; }
+  .btn { display: inline-block; background: var(--tor-lavender); color: var(--tor-linen); padding: 13px 26px; border-radius: 999px; font: 600 13px var(--tor-font-label); letter-spacing: .2em; text-transform: uppercase; text-decoration: none; }
+  ul { padding-left: 20px; } li { margin: 6px 0; max-width: 64ch; }
+</style>
+</head>
+<body>
+<main>
+  <div class="label">Brand guide · v1</div>
+  <h1>The Occasion Room</h1>
+  <p>Wedding websites where everything lives in one place: invitations, RSVP, itinerary, events and the party. The mark is an open <strong>arch</strong>, the "room" every guest walks into, with an <strong>ampersand</strong> standing in the doorway for the couple.</p>
+
+  <h2>Logo</h2>
+  <div class="label">Primary · stacked</div>
+  <div class="grid">
+    <div class="tile wide"><img src="logo/occasion-room-stacked.svg" alt="The Occasion Room stacked logo" width="620"></div>
+    <div class="tile" style="background:var(--tor-lavender)"><img src="logo/occasion-room-stacked-reverse.svg" alt="Stacked logo, reversed"><small style="color:var(--tor-linen)">REVERSE</small></div>
+    <div class="tile"><img src="logo/occasion-room-stacked-lavender.svg" alt="Stacked logo, single color"><small>ONE COLOR</small></div>
+  </div>
+
+  <div class="label" style="margin-top:40px">Horizontal · for the website header and email signatures</div>
+  <div class="grid">
+    <div class="tile wide"><img src="logo/occasion-room-horizontal.svg" alt="Horizontal logo" width="640"></div>
+    <div class="tile wide" style="background:var(--tor-lavender)"><img src="logo/occasion-room-horizontal-reverse.svg" alt="Horizontal logo, reversed" width="640"></div>
+  </div>
+
+  <div class="label" style="margin-top:40px">Wordmark · when the arch already appears nearby</div>
+  <div class="grid">
+    <div class="tile"><img src="logo/occasion-room-wordmark.svg" alt="Wordmark"></div>
+    <div class="tile" style="background:var(--tor-plum)"><img src="logo/occasion-room-wordmark-reverse.svg" alt="Wordmark, reversed"></div>
+  </div>
+
+  <div class="label" style="margin-top:40px">Marks and icons · Instagram avatar, favicon, stickers, invitation seal</div>
+  <div class="grid">
+    <div class="tile"><img src="logo/icon-lavender.svg" alt="" width="180"><small>AVATAR · PRIMARY</small></div>
+    <div class="tile"><img src="logo/icon-plum.svg" alt="" width="180"><small>AVATAR · PLUM</small></div>
+    <div class="tile"><img src="logo/mark-ampersand.svg" alt="" width="150"><small>MARK · AMPERSAND</small></div>
+    <div class="tile"><img src="logo/icon-monogram.svg" alt="" width="180"><small>ALTERNATE · MONOGRAM</small></div>
+  </div>
+
+  <h2>Color</h2>
+  <p>Your five colors are all soft mid-tones, so nothing in the set is dark enough for small body text. <strong>Plum Ink</strong>, a deep shade of Vintage Lavender, is added for text. It keeps the palette's mood and reads clearly (9.6:1 contrast on Linen).</p>
+  <div class="swatches">
+    <div class="sw"><div style="background:#4A3A50"></div><p><b>Plum Ink</b> · new<br>#4A3A50<br>Text, headings</p></div>
+    <div class="sw"><div style="background:#8D6B94"></div><p><b>Vintage Lavender</b><br>#8D6B94<br>Brand color, buttons</p></div>
+    <div class="sw"><div style="background:#B185A7"></div><p><b>Amethyst Smoke</b><br>#B185A7<br>Accents, hover</p></div>
+    <div class="sw"><div style="background:#C3A29E"></div><p><b>Rosy Taupe</b><br>#C3A29E<br>Dividers, borders</p></div>
+    <div class="sw"><div style="background:#E8DBC5"></div><p><b>Sand Dune</b><br>#E8DBC5<br>Cards, sections</p></div>
+    <div class="sw"><div style="background:#FFF4E9"></div><p><b>Linen</b><br>#FFF4E9<br>Page background</p></div>
+  </div>
+  <ul>
+    <li>Use roughly 60% Linen and Sand, 30% Lavender and Plum, 10% Amethyst and Taupe.</li>
+    <li>Only use Amethyst Smoke and Rosy Taupe for decoration, never for text (they reach only 2–3:1 contrast on Linen).</li>
+    <li>Vintage Lavender works for headings and buttons. For small text, use Plum Ink.</li>
+  </ul>
+
+  <h2>Type</h2>
+  <div class="type">
+    <div><div class="label">Display · Eyesome (shown here in Italiana)</div><div style="font:400 44px/1.1 var(--tor-font-display);letter-spacing:.05em;margin-top:8px">EVERY DETAIL, ONE ROOM</div></div>
+    <div><div class="label">Labels and buttons · League Spartan 500–600, uppercase, wide tracking</div><div style="margin-top:12px"><a class="btn" href="#">Book a consultation</a></div></div>
+    <div><div class="label">Body · Quicksand 400–500</div><p style="margin:8px 0 0">One beautiful link for your guests: the invitation, the RSVP, the weekend itinerary, the hotel block and the playlist requests, all in one place.</p></div>
+  </div>
+  <ul>
+    <li>Save League Spartan <b>Bold</b> for short, punchy moments. At 500–600 weight it sits more gracefully beside the thin display face.</li>
+    <li>Set the display face only in capitals, at 28px or larger. Its hairlines disappear at small sizes.</li>
+  </ul>
+</main>
+</body>
+</html>

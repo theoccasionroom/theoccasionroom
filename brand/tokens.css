@@ -1,0 +1,23 @@
+/* The Occasion Room: brand tokens */
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=League+Spartan:wght@400;500;600;700&family=Quicksand:wght@400;500;600&display=swap");
+
+/* Local copies (SIL Open Font License) so the guide works offline */
+@font-face { font-family: "Italiana"; src: url("fonts/Italiana-400.ttf"); font-display: swap; }
+@font-face { font-family: "League Spartan"; font-weight: 500; src: url("fonts/LeagueSpartan-500.ttf"); font-display: swap; }
+@font-face { font-family: "League Spartan"; font-weight: 600 700; src: url("fonts/LeagueSpartan-700.ttf"); font-display: swap; }
+@font-face { font-family: "Quicksand"; src: url("fonts/Quicksand-400.ttf"); font-display: swap; }
+
+:root {
+  /* Palette */
+  --tor-plum: #4A3A50;      /* Plum Ink: body text and headings (added) */
+  --tor-lavender: #8D6B94;  /* Vintage Lavender: primary brand color, buttons, large text */
+  --tor-amethyst: #B185A7;  /* Amethyst Smoke: accents, hover states, illustrations */
+  --tor-taupe: #C3A29E;     /* Rosy Taupe: dividers, borders, soft accents */
+  --tor-sand: #E8DBC5;      /* Sand Dune: cards, section backgrounds */
+  --tor-linen: #FFF4E9;     /* Linen: page background */
+
+  /* Type: swap Italiana for "Eyesome" once you have a commercial license */
+  --tor-font-display: "Eyesome", "Italiana", "Cormorant Garamond", serif;
+  --tor-font-label: "League Spartan", system-ui, sans-serif;
+  --tor-font-body: "Quicksand", system-ui, sans-serif;
+}
